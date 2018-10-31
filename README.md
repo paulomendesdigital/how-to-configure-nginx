@@ -1,6 +1,9 @@
-# Configuration Nginx
+# How to configure Nginx
 
 Install the nginx
+```
+sudo apt-get install nginx
+```
 
 Create the vhosts/example folder in /var/www
 
