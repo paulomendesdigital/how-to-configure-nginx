@@ -57,6 +57,12 @@ to
 server_name www.example.com example.com
 ```
 
+```
+try_files $uri $uri/ =404;
+to
+try_files $uri $uri/ index.php?$args
+```
+
 Create a link symbolic at /etc/nginx/sites-enabled to /etc/nginx/sites-available/example.conf
 ```
 sudo ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled
